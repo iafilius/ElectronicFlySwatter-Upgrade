@@ -16,16 +16,16 @@ The common electronic flyswatter bat might nog give enough punch to your needs, 
 
 * Remove the parallel discharge resistor
 * add bigger capacitor 
-   !["Adding bigger and better capacitor"](pictures/IMG_9746.PNG "IMG_9746.PNG")
+   !["Adding bigger and better capacitor"](pictures/IMG_9746.JPG "IMG_9746.JPG")
 
 # Not seen mentioned before
 
 * Use Alkaline batteries, and not Zink-Chloride
     * Alkaline has much lower internal resistance
-     !["Undesired Zink Cloride batteries"](pictures/IMG_9744.PNG "IMG_9744.PNG")
+     !["Undesired Zink Cloride batteries"](pictures/IMG_9744.JPG "IMG_9744.JPG")
 * Replace thin power (battery) wires by thick onces
     * remove unneeded extra resistance
-    !["Schema"](pictures/IMG_9747.PNG "IMG_9747.PNG")
+    !["Thicker power wires"](pictures/IMG_9747.JPG "IMG_9747.JPG")
 * shorten the power wires
     * remove extra resistance
 * [Untested] replace switching transistor with lower Vsat
