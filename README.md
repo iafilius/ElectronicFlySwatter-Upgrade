@@ -42,22 +42,24 @@ The common electronic flyswatter bat might nog give enough punch to your needs, 
     * leave a higher effective voltage on switching transformer
     Replacing the transistor did no produce that much higher output voltage, but at around 1400V way above the 1N1007 specs, which might limit the voltage because it triggers (controlled) breakdown.
 * Upgrading the output/high voltage diode.
-    * use a higher breakdown voltage
-    * low capacitance
-    * low reverse leakage diode
-    Wow... by just replacing the diode (1N1007 by a RFC4K, which might not the best) voltage increased from about 1400 to 1900V !! this is the kind of changes looking for (just below the rated value of the upgraded output capacitor)
+        * use a higher breakdown voltage
+        * low capacitance
+        * low reverse leakage diode
+    * 1N4007 replaced by RFC4K:  Wow... by just replacing the diode (1N4007 by a RFC4K, which might not the best) voltage increased from about 1400 to 1900V !! this is the kind of changes looking for. Just below the rated value of the upgraded output capacitor) (with 22MOhm discharge resistor connected)
+    * replacing the 1N4007 by a 2CL73A diode produces even 2100V !! . (With 22Mohm discharge resistor connected)
 * Tuning base resistor
     * lowering the base resistor decreses charge frequency, but produces higher voltage
     * incresing the base resistor incresing the charge frequency, but lowers output voltage.
 * [Untested] use a boost convertor to get a little higher voltage (5V)
     * this might impact static current settings, and might need output diode and capacitor upgraded to a higher voltage.
+* [Failed] adding an extra diode and capacitor to build 
 
 # Simple tests
 
 Issue: Most Voltage meaters won't go over 1000V DC, you possible ruin your meter when trying.
 
 Primitive but easy to execute tests:
-    * modifcate the dischange reesitor my making a voltage divider
+    * modificate the dischange reesitor my making a voltage divider and provide a low voltage meter option.
      add a resistor ~1/100 or ~1/1000 in series with the discharge resistor, and your voltmeter can easy measure/calculate the output voltage. 
     * test single discharge with a isolated screwdriver to notice possible improved "punch"
     * test repeated discharge with a isolated scredriver, and leave a smal air gab, and notice imporivemd in speed is discharges again.
@@ -66,7 +68,8 @@ Primitive but easy to execute tests:
 
     * These devices are not for children
     * Removing the discharge reistor may surprise you or someone else sooner or later, I recomment to upgrade dischange resistor to voltage divider as described above.
-    * Testing with dischange resistors: too low
+    * Verify the original output capacitor, mine was carried labels 300V~  and 250V~ and was certainly not rated for the 2000V after upgrading. It did kept up, but I removed it.
+    * Testing with transistors base resistors: too low value
         * voltage starts dropping
         * oscillating will stop
         * you might burn the switching transistor (bad batteries (Zinc-Choride) with high internal resistance might protect you)
