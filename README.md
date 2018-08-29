@@ -7,7 +7,7 @@ The common electronic flyswatter bat might nog give enough punch to your needs, 
 
 # Issues with non modified Electronic Flyswatters
 
-    * Wasps are not the impressed with your un-modified fly swatter, and keep coming
+    * Wasps are not impressed at all with your un-modified fly swatter, and keep coming (back)
     * Huge stinging flies (like horse flies) are not impressed and keep coming also.
 
 # Solution
@@ -42,17 +42,20 @@ The common electronic flyswatter bat might nog give enough punch to your needs, 
     * leave a higher effective voltage on switching transformer
     Replacing the transistor did no produce that much higher output voltage, but at around 1400V way above the 1N1007 specs, which might limit the voltage because it triggers (controlled) breakdown.
 * Upgrading the output/high voltage diode.
+    * Desired properties
         * use a higher breakdown voltage
         * low capacitance
         * low reverse leakage diode
+        * (ultra) fast switching
     * 1N4007 replaced by RFC4K:  Wow... by just replacing the diode (1N4007 by a RFC4K, which might not the best) voltage increased from about 1400 to 1900V !! this is the kind of changes looking for. Just below the rated value of the upgraded output capacitor) (with 22MOhm discharge resistor connected)
     * replacing the 1N4007 by a 2CL73A diode produces even 2100V !! . (With 22Mohm discharge resistor connected)
 * Tuning base resistor
     * lowering the base resistor decreses charge frequency, but produces higher voltage
-    * incresing the base resistor incresing the charge frequency, but lowers output voltage.
+    * increasing the base resistor increasing the charge frequency, but lowers output voltage.
 * [Untested] use a boost convertor to get a little higher voltage (5V)
     * this might impact static current settings, and might need output diode and capacitor upgraded to a higher voltage.
-* [Failed] adding an extra diode and capacitor to build 
+* [Failed] adding an extra diode and capacitor to build a Villard cascade voltage multiplier.
+    * For some unknown reason I did not manage to get a higher voltage. then without.
 
 # Simple tests
 
