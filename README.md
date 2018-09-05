@@ -12,8 +12,8 @@ The common electronic flyswatter bat might not give enough punch to your needs, 
 
 # Solution
 
-    * Buy the right type! The one-layer grid is the best for catching the biggest and smallest, but the also most dangerous for you and children.
-    * Upgrade the fly swatter to get more punch, and make sure bigger insects got the message, and get get killed, or do not longer return when hit just once. (this is what we start to talk about)
+    * Buy the right type! The one-layer grid is the best for catching the biggest, smallest and cleaning, but the also most dangerous for you and children.
+    * Upgrade the fly swatter to get more punch, and make sure bigger insects got the message, and get either killed or at least do not longer return when hit just once. (this is what we start to talk about)
 
 # Goals 
 
@@ -22,7 +22,7 @@ The common electronic flyswatter bat might not give enough punch to your needs, 
 * fast charge to ready output
 * high output current for continues "frying"
 * remove the high pitched sound, not warning the suspects
-* Conditions:
+* Design targets:
     * Not making it too much heavier
     * Try to make use of existing design knobs and battery holder.
     * No visible difference on outside (like huge external connected capacitors or batteries)
@@ -83,6 +83,9 @@ The common electronic flyswatter bat might not give enough punch to your needs, 
 * [Failed] adding a Villard cascade voltage multiplier (extra diode and capacitor)
     * For some unknown reason I did not manage to get a higher voltage. then without.
     * Possible battery not providing enough current, or used wrong components.
+* [Failed] replaced the electonics with the HV-1 high voltage generator and added the high voltage diode and capacitor.
+    * It sparked, but I wasn't impressed by it (while using a single 3.7 Li-ion battery).
+    * My multimeter dit go haywire, even when just connecting one terminal, not able to measure output voltage (possible due to much higher frequency).
 
 # Simple tests
 
